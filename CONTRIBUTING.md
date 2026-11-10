@@ -12,7 +12,12 @@ npm pack --dry-run
 
 CI checks pull requests and pushes to `main` on Node.js 22 and 24.
 Dependabot checks npm dependencies and GitHub Actions weekly.
-When changing Biome versions, review the peer dependency range and README installation example too.
+When changing Biome versions, review the peer dependency range.
+Husky installs the Git hooks during `pnpm install`. Before each commit, a TypeScript script
+updates the required Biome version range in README from `peerDependencies`.
+If README changes, the hook stops the commit so you can review and stage the update before retrying.
+Run `pnpm readme:update` to update it manually or `pnpm readme:check` to check it without writing.
+The script runs directly in Node.js without a build step (Node.js 22.18+ or 24+).
 
 ## Release setup
 

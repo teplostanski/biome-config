@@ -35,5 +35,7 @@ jobs:
 
       - run: pnpm check
 
+      - run: pnpm readme:check
+
       - name: Check package contents
         run: npm pack --dry-run

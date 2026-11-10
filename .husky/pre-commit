@@ -1,0 +1,2 @@
+pnpm readme:update --pre-commit
+pnpm check

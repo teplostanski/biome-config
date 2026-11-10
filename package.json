@@ -1,6 +1,6 @@
 {
   "name": "@teplostanski/biome-config",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Shared Biome formatting and lint rules",
   "license": "MIT",
   "repository": {
@@ -29,11 +29,16 @@
   "type": "module",
   "packageManager": "pnpm@12.18.0",
   "scripts": {
+    "prepare": "husky",
+    "readme:update": "node scripts/update-readme.ts",
+    "readme:check": "node scripts/update-readme.ts --check",
     "check": "biome check .",
+    "check:fix": "biome check --write .",
     "format": "biome format --write ."
   },
   "devDependencies": {
-    "@biomejs/biome": "2.6.6"
+    "@biomejs/biome": "2.6.6",
+    "husky": "9.1.7"
   },
   "keywords": [
     "biome",
