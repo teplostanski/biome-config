@@ -54,13 +54,6 @@ pnpm pack
 The package exports its configuration through `biome-manifest.json`, supported since Biome 2.6.
 See the [Biome package documentation](https://biomejs.dev/guides/publish-packages/).
 
-## Publishing
+## License
 
-Confirm the package name is available under your npm scope, authenticate with npm, then run:
-
-```sh
-pnpm check
-pnpm publish --access public
-```
-
-Update the package version before publishing subsequent releases.
+[MIT](./LICENSE) License © 2026-present [Teplostanski Igor](https://github.com/teplostanski)

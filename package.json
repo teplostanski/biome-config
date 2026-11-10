@@ -22,7 +22,8 @@
     "@biomejs/biome": "^2.6.5"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "author": "Teplostanski Igor <hi@teplostanski.me>",
   "type": "module",
