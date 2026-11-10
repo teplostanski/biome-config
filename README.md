@@ -8,7 +8,7 @@ Requires Biome 2.6.5 or later within version 2.
 After this package is published to npm:
 
 ```sh
-pnpm add -D -E @biomejs/biome@2.6.5 @teplostanski/biome-config@1.0.0
+pnpm add -D -E @biomejs/biome @teplostanski/biome-config
 ```
 
 Create `biome.json` in your project:
