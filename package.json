@@ -1,0 +1,44 @@
+{
+  "name": "@teplostanski/biome-config",
+  "version": "1.0.0",
+  "description": "Shared Biome formatting and lint rules",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teplostanski/biome-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/teplostanski/biome-config/issues"
+  },
+  "homepage": "https://github.com/teplostanski/biome-config#readme",
+  "files": [
+    "biome-manifest.json",
+    "configs"
+  ],
+  "exports": {
+    "biome": "./biome-manifest.json"
+  },
+  "peerDependencies": {
+    "@biomejs/biome": "^2.6.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Teplostanski Igor <hi@teplostanski.me>",
+  "type": "module",
+  "packageManager": "pnpm@12.18.0",
+  "scripts": {
+    "check": "biome check .",
+    "format": "biome format --write ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.5"
+  },
+  "keywords": [
+    "biome",
+    "biome-config",
+    "biome-plugin",
+    "formatter",
+    "lint"
+  ]
+}
