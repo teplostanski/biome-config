@@ -37,6 +37,8 @@ Add scripts to your project's `package.json`:
 - Two-space indentation and a line width of 100.
 - Single quotes, optional semicolons, and omitted arrow parentheses where possible in JavaScript and TypeScript.
 - Recommended lint rules.
+- Arrow functions instead of non-generator function expressions that do not use `this` (`useArrowFunction`).
+- Function expressions assigned to variables instead of declarations (`useConsistentFunctionStyle`, experimental nursery rule). Both rules report errors. Methods, default exports, and TypeScript overloads retain the applicable rule exceptions.
 - Markdown and YAML formatting, including Markdown frontmatter parsing.
 
 Keep project-specific file exclusions, VCS settings, and overrides in the consuming project's config.

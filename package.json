@@ -1,6 +1,6 @@
 {
   "name": "@teplostanski/biome-config",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Shared Biome formatting and lint rules",
   "license": "MIT",
   "repository": {
